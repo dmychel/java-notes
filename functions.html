@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+    <script>
+        const name = 'Ryu Hyabusa';
+        const weapon = 'Dragon Sword'
+
+        function toUpper(text) {
+            const upperCased = text.toUpperCase();
+            console.log(upperCased);
+        }//function scope
+
+        toUpper(name); 
+        toUpper(weapon);
+
+        //alternative ways to write functions
+        const toUpperTwo = function(text) {
+            const upperCased = text.toUpperCase();
+            console.log(upperCased);
+        } //1
+
+        toUpperTwo(name);
+        toUpperTwo(weapon);
+
+        const toUpperThree = (text) => {
+            const upperCased = text.toUpperCase();
+            console.log(upperCased);
+        } //2
+
+        toUpperThree(name);
+        toUpperThree(weapon);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
